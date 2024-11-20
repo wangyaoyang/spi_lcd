@@ -7,21 +7,21 @@ CND_BASEDIR=`pwd`
 CND_BUILDDIR=build
 CND_DISTDIR=dist
 # Release configuration
-CND_PLATFORM_Release=GNU_MIPS_1907-Linux
-CND_ARTIFACT_DIR_Release=dist/Release/GNU_MIPS_1907-Linux
+CND_PLATFORM_Release=GNU_ARM_12.3.0-Linux
+CND_ARTIFACT_DIR_Release=dist/Release/GNU_ARM_12.3.0-Linux
 CND_ARTIFACT_NAME_Release=spi_lcd
-CND_ARTIFACT_PATH_Release=dist/Release/GNU_MIPS_1907-Linux/spi_lcd
-CND_PACKAGE_DIR_Release=dist/Release/GNU_MIPS_1907-Linux/package
+CND_ARTIFACT_PATH_Release=dist/Release/GNU_ARM_12.3.0-Linux/spi_lcd
+CND_PACKAGE_DIR_Release=dist/Release/GNU_ARM_12.3.0-Linux/package
 CND_PACKAGE_NAME_Release=spilcd.tar
-CND_PACKAGE_PATH_Release=dist/Release/GNU_MIPS_1907-Linux/package/spilcd.tar
+CND_PACKAGE_PATH_Release=dist/Release/GNU_ARM_12.3.0-Linux/package/spilcd.tar
 # Debug configuration
-CND_PLATFORM_Debug=GNU_MIPS_1907-Linux
-CND_ARTIFACT_DIR_Debug=dist/Debug/GNU_MIPS_1907-Linux
+CND_PLATFORM_Debug=GNU_ARM_12.3.0-Linux
+CND_ARTIFACT_DIR_Debug=dist/Debug/GNU_ARM_12.3.0-Linux
 CND_ARTIFACT_NAME_Debug=spi_lcd
-CND_ARTIFACT_PATH_Debug=dist/Debug/GNU_MIPS_1907-Linux/spi_lcd
-CND_PACKAGE_DIR_Debug=dist/Debug/GNU_MIPS_1907-Linux/package
+CND_ARTIFACT_PATH_Debug=dist/Debug/GNU_ARM_12.3.0-Linux/spi_lcd
+CND_PACKAGE_DIR_Debug=dist/Debug/GNU_ARM_12.3.0-Linux/package
 CND_PACKAGE_NAME_Debug=spilcd.tar
-CND_PACKAGE_PATH_Debug=dist/Debug/GNU_MIPS_1907-Linux/package/spilcd.tar
+CND_PACKAGE_PATH_Debug=dist/Debug/GNU_ARM_12.3.0-Linux/package/spilcd.tar
 #
 # include compiler specific variables
 #

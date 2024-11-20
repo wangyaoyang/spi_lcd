@@ -19,7 +19,7 @@ define Package/$(PKG_NAME)
   SECTION:=utils
   CATEGORY:=Utilities
   TITLE:=SPI based LCD control service
-  DEPENDS:=+libpthread +liblua +libnl +libiwinfo
+  DEPENDS:=+libpthread
   MAINTAINER:=AiComm
 endef
 
@@ -44,7 +44,7 @@ define Package/$(PKG_NAME)/install
 	$(INSTALL_DIR) $(1)/etc/config
 	$(INSTALL_DIR) $(1)/usr/config
 	$(INSTALL_BIN) $(PKG_BUILD_DIR)/$(PKG_NAME).init $(1)/etc/init.d/$(PKG_NAME)
-	$(INSTALL_BIN) $(PKG_BUILD_DIR)/dist/Release/GNU_MIPS_1907-Linux/$(PKG_NAME) $(1)/usr/sbin/$(PKG_NAME)
+	$(INSTALL_BIN) $(PKG_BUILD_DIR)/dist/Release/GNU_ARM_12.3.0-Linux/$(PKG_NAME) $(1)/usr/sbin/$(PKG_NAME)
 endef
 
 $(eval $(call BuildPackage,$(PKG_NAME)))

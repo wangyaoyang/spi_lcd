@@ -6,7 +6,7 @@
 
 # Macros
 TOP=`pwd`
-CND_PLATFORM=GNU_MIPS_1907-Linux
+CND_PLATFORM=GNU_ARM_12.3.0-Linux
 CND_CONF=Release
 CND_DISTDIR=dist
 CND_BUILDDIR=build

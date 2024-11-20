@@ -14,14 +14,14 @@ GREP=grep
 NM=nm
 CCADMIN=CCadmin
 RANLIB=ranlib
-CC=mips-openwrt-linux-gcc
-CCC=mips-openwrt-linux-g++
-CXX=mips-openwrt-linux-g++
+CC=arm-openwrt-linux-gcc
+CCC=arm-openwrt-linux-g++
+CXX=arm-openwrt-linux-g++
 FC=gfortran
 AS=as
 
 # Macros
-CND_PLATFORM=GNU_MIPS_1907-Linux
+CND_PLATFORM=GNU_ARM_12.3.0-Linux
 CND_DLIB_EXT=so
 CND_CONF=Debug
 CND_DISTDIR=dist
