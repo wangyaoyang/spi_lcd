@@ -32,7 +32,8 @@ extern "C" {
 #define MACH_AR933X         0
 #define MACH_AR934X         0
 #define MACH_AR953X         0
-#define MACH_QCA956X        1
+#define MACH_QCA956X        0
+#define MACH_IPQ5018        1
 
 #if (MACH_AR934X)
 //#define PLATFORM        "/sys/devices/platform/"
@@ -62,6 +63,18 @@ void GPIO_SET(int fd, uint pin, uint val);
 #define GPIO_SPI_TCH_CS         5	//
 #define GPIO_SPI_TCH_BUSY	1	//
 #define QCA956X_GPIO_COUNT          23
+bool GPIO_GET(int fd, uint pin);
+void GPIO_SET(int fd, uint pin, uint val);
+#elif (MACH_IPQ5018)
+//#define GPIO_SPI_MISO           17	//by default JTAG_TDO
+//#define GPIO_SPI_SCK            16	//by default JTAG_TCK
+//#define GPIO_SPI_MOSI           14	//by default JTAG_TDI
+#define GPIO_SPI_LCD_DCX	0	//
+#define GPIO_SPI_LCD_RST	1	//
+#define GPIO_SPI_TCH_BUSY	2	//
+#define GPIO_SPI_LCD_CS         41
+#define GPIO_SPI_TCH_CS         41
+#define IPQ5018_GPIO_COUNT      41
 bool GPIO_GET(int fd, uint pin);
 void GPIO_SET(int fd, uint pin, uint val);
 #else   //NO GWS_LEDS

@@ -43,10 +43,23 @@ static uint SPI_DEBUG_SEND[] = {
 #define MAX_GPIO_PIN    AR934X_GPIO_COUNT
 #elif (MACH_QCA956X)
 #define MAX_GPIO_PIN    QCA956X_GPIO_COUNT
+#elif (MACH_IPQ5018)
+#define MAX_GPIO_PIN    IPQ5018_GPIO_COUNT
 #else
 #define MAX_GPIO_PIN    AR933X_GPIO_COUNT
 #endif
 
+#if (MACH_IPQ5018)
+//#define GPIO_BASE   465
+//void GPIO_SET(int fd, uint pin, uint val) {
+//    uint gpio = GPIO_BASE + pin;
+//    char 
+//}
+//
+//bool GPIO_GET(int fd, uint pin) {
+//    return FALSE;
+//}
+//#else
 void GPIO_SET(int fd, uint pin, uint val) {
     if (0 <= pin && pin < MAX_GPIO_PIN) {
         uint val_pin = (val ? SPI_DCX_BIT_SIGNAL : 0) | pin;
@@ -63,6 +76,7 @@ bool GPIO_GET(int fd, uint pin) {
     }
     return FALSE;
 }
+#endif
 
 void Spi_Set_DCX(int fd, uchar dcx) {
     if (dcx != SPI_DCX_NONE) {
